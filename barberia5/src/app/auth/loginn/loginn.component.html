@@ -14,8 +14,7 @@
 
     <div class="login-box">
       
-      
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <img src="./assets/imagenes/fondo2.png">
         
         <label>
@@ -29,11 +28,41 @@
 
         <a href="#" class="link">No tienes cuenta?</a>
         
-        <button type="submit">Entrar</button>
+        <button type="submit"  (click)="login()">Entrar</button>
 
         
+      </form> -->
+
+      <script src="loginn.component.ts"></script> 
+      <form class="custom-form" method="post">
+        <img src="./assets/imagenes/fondo2.png">
+          <label>
+            <i class="fa-solid fa-user"></i>
+            <input
+            type="email"
+            [(ngModel)]="correo"
+            name="correo"
+            placeholder="correo"
+            required="required"
+          />
+          </label>
+          
+        <label>
+            <i class="fa-solid fa-lock"></i>
+            <input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            placeholder="Password"
+            required="required"
+          />
+        </label>
+        
+        <a href="#" class="link">No tienes cuenta?</a>
+        <button type="submit"  (click)="login()">Entrar</button>
       </form>
-      <script src="loginn.component.ts"></script>
+      <script src="loginn.component.ts"></script> 
+
     </div>
   </body>
 </html>
