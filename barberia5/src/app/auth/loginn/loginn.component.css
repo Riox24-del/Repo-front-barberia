@@ -21,19 +21,16 @@ form {
     flex-direction: column;
     background: #fff;
     text-align: center;
-    padding: 20px 25px;
+    padding: 20px 35px; /* Aumentar el padding horizontal */
     box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
-}
-
-form .title {
-    color: #252525;
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 30px;
+    width: 350px; /* Ajustar el ancho del formulario */
+    margin: 0 auto;
 }
 
 form label {
-    margin-bottom: 25px;
+    margin-bottom: 15px; /* Reducir el espacio entre etiquetas */
+    display: flex;
+    align-items: center;
 }
 
 form label input::placeholder {
@@ -62,4 +59,32 @@ form button {
     padding: 10px 15px;
     cursor: pointer;
     font-size: 20px;
+}
+
+form select {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 8px;
+    font-size: 18px;
+    border-bottom: solid 1px #252525;
+    color: #252525;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form .inline-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form label input,
+form label select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
 }
