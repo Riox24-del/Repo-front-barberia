@@ -1,60 +1,46 @@
 <!DOCTYPE html>
-
-
 <html lang="es">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar Cita - Barbería 5 Changos</title>
     <link rel="stylesheet" href="citas.component.css">
 </head>
-
 <body>
     <header>
         <h1>Agendar Cita</h1>
-        <nav>
-            <ul>
-
-            </ul>
-        </nav>
     </header>
-
     <main>
         <section id="formulario-cita">
-            <form>
+            <form [formGroup]="registerForm" (ngSubmit)="registroCita()">
                 <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" formControlName="fecha" required>
                 </div>
                 <div class="form-group">
-                    <label for="nombre">Servicio que solicita</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="hora">Horario:</label>
+                    <select id="hora" name="hora" formControlName="hora" required>
+                        <option value="">Seleccionar horario</option>
+                        <option value="08:00">08:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="13:00">01:00 PM</option>
+                        <!-- Agrega más opciones de horario según tu necesidad -->
+                    </select>
                 </div>
-
-                <!-- <div class="form-group">
-                    <label for="email">------</label>
-                    <input type="email" id="email" name="email" required>
-                </div> -->
-
-
                 <div class="form-group">
-                    <label for="mensaje">Comentarios</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <label for="motivo">Servicio:</label>
+                    <select id="motivo" name="motivo" formControlName="motivo" required>
+                        <option value="">Seleccionar servicio</option>
+                        <option value="Corte">Corte de cabello</option>
+                        <option value="Afeitado">Afeitado</option>
+                        <option value="Lavado">Lavado y peinado</option>
+                        <!-- Agrega más opciones de servicios según tu necesidad -->
+                    </select>
                 </div>
-
-                <button type="submit" [disabled]="true" class="btn-outline-dark">Enviar</button>
+                <button type="submit" [disabled]="!registerForm.valid">Enviar</button>
             </form>
+            
         </section>
-
-
-
     </main>
-
-
 </body>
-
-
-
 </html>

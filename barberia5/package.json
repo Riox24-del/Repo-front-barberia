@@ -11,16 +11,21 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.0.0",
+    "@angular/cdk": "^13.3.9",
     "@angular/common": "~13.0.0",
     "@angular/compiler": "~13.0.0",
     "@angular/core": "~13.0.0",
     "@angular/forms": "~13.0.0",
+    "@angular/material": "^13.3.9",
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@fullcalendar/angular": "^6.1.8",
     "bootstrap": "^5.3.1",
+    "fullcalendar": "^6.1.8",
     "rxjs": "~7.4.0",
-    "tslib": "^2.3.0",
+    "sweetalert2": "^11.7.22",
+    "tslib": "^2.6.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
