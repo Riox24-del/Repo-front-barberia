@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
 
+  focus: any;
+  focus1: any;
+
+ 
   constructor() { }
 
   ngOnInit(): void {

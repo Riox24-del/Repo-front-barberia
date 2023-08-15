@@ -12,7 +12,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { FullCalendarModule } from '@fullcalendar/angular'; 
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { PerfilAdminComponent } from './auth/perfil-admin/perfil-admin.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { FooterComponent } from './footer/footer.component'; 
 
 
 
@@ -24,7 +28,11 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     PerfiluserComponent,
     HomeComponent,
     CitasComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    PerfilAdminComponent,
+    GaleriaComponent,
+    ContactoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
