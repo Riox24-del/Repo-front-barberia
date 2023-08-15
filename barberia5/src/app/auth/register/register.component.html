@@ -13,16 +13,16 @@
 
     <div class="login-box">
       
-      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="registerForm">
         
         <img src="./assets/imagenes/fondo2.png">
         <div class="inline-inputs">
           <label class="inline-inputs">
             <i class="fa-solid fa-user"></i>
-            <input placeholder="nombre" type="text" id="firstname" formControlName="firstName" required>
+            <input placeholder="nombre" type="text" id="nombre" formControlName="nombre" required>
         </label>
         <label class="inline-inputs">
-            <input placeholder="apellido" type="text" id="lastname" formControlName="lastName" required>
+            <input placeholder="apellido" type="text" id="apellido" formControlName="apellido" required>
         </label>
         </div>
 
@@ -30,18 +30,18 @@
       
         <label>
             <i class="fa-solid fa-envelope"></i>
-            <input placeholder="correo" type="text" id="email" formControlName="email" required>
+            <input placeholder="correo" type="text" id="correo" formControlName="correo" required>
         </label>
 
         <div class="inline-inputs">
           <label class="inline-inputs">
             <i class="fa-solid fa-calendar"></i>
-            <input placeholder="edad" type="text" id="age" formControlName="age" required inputmode="numeric" pattern="[0-9]*">
+            <input placeholder="edad" type="text" id="edad" formControlName="edad" required inputmode="numeric" pattern="[0-9]*">
         </label>
 
         <label class="inline-inputs">
             <i class="fa-solid fa-venus-mars"></i>
-            <select id="gender" formControlName="gender" required placeholder="genero">
+            <select id="gender" formControlName="sexo" required placeholder="sexo">
                 <option value="" disabled selected>Selecciona género</option>
                 <option value="male">Masculino</option>
                 <option value="female">Femenino</option>
@@ -63,8 +63,8 @@
 
         <a href="#" class="link">Ya tienes una cuenta?</a>
         
-        <button type="submit">Registrarse</button>
-        
+        <button type="submit" (click)="registro()">Registrarse</button>
+         
       </form>
       <script src="register.component.ts"></script>
     </div>
