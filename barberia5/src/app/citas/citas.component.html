@@ -1,60 +1,25 @@
 <!DOCTYPE html>
-
-
-<html lang="es">
-
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendar Cita - Barbería 5 Changos</title>
-    <link rel="stylesheet" href="citas.component.css">
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" type="text/css" href="citas.component.css">
 </head>
-
 <body>
-    <header>
+    <div class="container">
         <h1>Agendar Cita</h1>
-        <nav>
-            <ul>
-
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="formulario-cita">
-            <form>
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="nombre">Servicio que solicita</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-
-                <!-- <div class="form-group">
-                    <label for="email">------</label>
-                    <input type="email" id="email" name="email" required>
-                </div> -->
-
-
-                <div class="form-group">
-                    <label for="mensaje">Comentarios</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                </div>
-
-                <button type="submit" [disabled]="true" class="btn-outline-dark">Enviar</button>
-            </form>
-        </section>
-
-
-
-    </main>
-
-
+        <form>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            
+            <label for="motivo">Motivo:</label>
+            <textarea id="motivo" name="motivo" rows="4" required></textarea>
+            
+            <button type="black">Agendar</button>
+        </form>
+    </div>
 </body>
-
-
-
 </html>
+
