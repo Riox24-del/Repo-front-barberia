@@ -8,18 +8,18 @@ import { PerfiluserComponent } from './auth/perfiluser/perfiluser.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginnComponent } from './auth/loginn/loginn.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
 import { CitasComponent } from './citas/citas.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+
     RegisterComponent,
     PerfiluserComponent,
     HomeComponent,
-    LoginnComponent
+    LoginnComponent,
     CitasComponent,
     ServiciosComponent
   ],
