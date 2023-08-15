@@ -10,8 +10,10 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(src/app/auth/register/imagenes/fondo.jpg) no-repeat center top;
-    background-size: cover; /* Ajustar la imagen de fondo para que cubra toda la pantalla */
+    background: url(src/assets/imagenes/fondoo.jpg) no-repeat center top;
+    background-size: cover;
+  
+
 } 
 
 form {
