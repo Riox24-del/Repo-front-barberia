@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { LoginService } from 'src/app/login.service';
 import { Router } from "@angular/router";
 
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -19,18 +20,18 @@ export class RegisterComponent implements OnInit {
   edad!:number;
   
   constructor(private formBuilder: FormBuilder, public router: Router,
-    private http: HttpClient, 
-    private loginS:LoginService) { 
-     this.registerForm = this.formBuilder.group({
-       nombre: ['', Validators.required],
-       apellido: ['', Validators.required],
-       correo: ['', [Validators.required, Validators.email]],
-       edad: ['', [Validators.required, Validators.pattern('[0-9]*')]],
-       sexo: ['', Validators.required],
-       password: ['', Validators.required],
-       confirmPassword: ['', Validators.required]
-     });
-    }
+     private http: HttpClient, 
+     private loginS:LoginService) { 
+      this.registerForm = this.formBuilder.group({
+        nombre: ['', Validators.required],
+        apellido: ['', Validators.required],
+        correo: ['', [Validators.required, Validators.email]],
+        edad: ['', [Validators.required, Validators.pattern('[0-9]*')]],
+        sexo: ['', Validators.required],
+        password: ['', Validators.required],
+        confirmPassword: ['', Validators.required]
+      });
+     }
 
      
   ngOnInit() {
@@ -38,6 +39,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
+    
     
   }
 

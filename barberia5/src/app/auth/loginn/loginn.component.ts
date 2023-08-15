@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { LoginService } from 'src/app/login.service';
 import { Router } from "@angular/router";
 
+
 @Component({
   selector: 'app-loginn',
   templateUrl: './loginn.component.html',
@@ -18,7 +19,22 @@ export class LoginnComponent implements OnInit {
     public router: Router, private http: HttpClient, private loginS:LoginService) { }
 
   ngOnInit(): void {
+  //   this.loginForm = this.formBuilder.group({
+  //     name:['', Validators.required],
+  //     password: ['', [Validators.required, Validators.minLength(6)]],
+      
+  //   });
+  // }
+  // onSubmit() {
+  //   if (this.loginForm?.valid) {
+  //     console.log("Datos del formulario:");
+  //     console.log("Nombre", this.loginForm.get('name')?.value);
+  //     console.log("Contraseña:", this.loginForm.get('password')?.value);
+      
 
+  //   } else {
+  //     console.log("Por favor, complete todos los campos correctamente.");
+  //   }
   }
 
 
