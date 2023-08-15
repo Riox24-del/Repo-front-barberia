@@ -1,2 +1,81 @@
 <!--<app-register></app-register>-->
 <app-loginn></app-loginn>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber 5 Changos</title>
+    <link rel="stylesheet" href="app.component.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <div class="container-fluid">
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Citas">Agenda una cita</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+        Nuestros servicios            </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./Servicios">Todos los servicios</a></li>
+                        <li><a class="dropdown-item" href="#">Corte de cabello clasico</a></li>
+                        <li><a class="dropdown-item" href="#"> Coret de cabello moderno</a></li>
+                        <li><a class="dropdown-item" href="#">Afeitado clasico</a></li>
+                        <li><a class="dropdown-item" href="#">Diseño de barba Árabe</a></li>
+
+                        <a class="dropdown-item" href="#">Tratamientos capilares</a>
+                        <li><a class="dropdown-item" href="#">Servicio a domicilio</a></li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- <header>
+    <h1>Barber 5 Changos</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header> -->
+
+<body>
+    <router-outlet>
+
+    </router-outlet>
+
+
+    <footer>
+        <p>Todos los derechos reservados &copy; Barbería 5 Changos</p>
+    </footer>
+
+</body>

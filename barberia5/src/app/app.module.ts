@@ -8,6 +8,8 @@ import { PerfiluserComponent } from './auth/perfiluser/perfiluser.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginnComponent } from './auth/loginn/loginn.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CitasComponent } from './citas/citas.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     PerfiluserComponent,
     HomeComponent,
     LoginnComponent
+    CitasComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
