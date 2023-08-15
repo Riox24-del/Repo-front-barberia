@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
-=======
 import { CommonModule } from '@angular/common';
->>>>>>> 2a37d537644c907bf4c39e39643622fe40e5bce6
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -14,8 +11,6 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CitasComponent } from './citas/citas.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-import { HttpClientModule } from '@angular/common/http'; 
-import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FullCalendarModule } from '@fullcalendar/angular';
@@ -39,21 +34,21 @@ import { FooterComponent } from './footer/footer.component';
     PerfilAdminComponent,
     GaleriaComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
-    AppRoutingModule,   HttpClientModule,
+    AppRoutingModule, 
+      HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule, FullCalendarModule
-=======
-        AppRoutingModule,
+    BrowserAnimationsModule, 
+    FullCalendarModule,
+    AppRoutingModule,
     FormsModule,
     CommonModule,
     ReactiveFormsModule,
-    HttpClientModule
->>>>>>> 2a37d537644c907bf4c39e39643622fe40e5bce6
+    HttpClientModule,
   ],
   exports: [RegisterComponent],
   providers: [],
