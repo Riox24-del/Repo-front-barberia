@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginnComponent } from './auth/loginn/loginn.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
+import { CitasComponent } from './citas/citas.component';
+import { ServiciosComponent } from './servicios/servicios.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     PerfiluserComponent,
     HomeComponent,
     LoginnComponent
+    CitasComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
