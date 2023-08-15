@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #bebab8;
+    background-color: #f8f6f5;
 }
 
 header {
@@ -48,7 +48,7 @@ section {
 }
 
 section h2 {
-    border-bottom: 2px solid #bebab8;
+    border-bottom: 2px solid #e9e6e4;
     padding-bottom: 5px;
 }
 

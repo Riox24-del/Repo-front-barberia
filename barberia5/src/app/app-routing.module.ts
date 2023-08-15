@@ -6,6 +6,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { PerfilAdminComponent } from './auth/perfil-admin/perfil-admin.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { LoginnComponent } from './auth/loginn/loginn.component';
 
 const routes: Routes = [
   {path:' ', redirectTo:'home',pathMatch:'full'},
@@ -15,6 +17,8 @@ const routes: Routes = [
    { path: 'admin', component: PerfilAdminComponent, pathMatch:'full'},
    { path: 'galery', component: GaleriaComponent, pathMatch:'full'},
    { path: 'contacto', component: ContactoComponent, pathMatch:'full'},
+   { path: 'login', component: LoginnComponent, pathMatch:'full'},
+   { path: 'Registro', component: RegisterComponent, pathMatch:'full'},
 ];
 
 @NgModule({
